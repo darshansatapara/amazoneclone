@@ -2,13 +2,13 @@ import React from "react";
 import "./Header.css";
 import ShoppingBasketIcon from "@mui/icons-material/ShoppingBasket";
 import SearchIcon from "@mui/icons-material/Search";
-
+import headerlogo from "../images/header-logo.png"
 
 function Header() {
   return (
     <div className="Header">
       <div className="Header-logo">
-        <img src={"./images/header-logo.png"} alt="logo" />
+        <img src={headerlogo} alt="logo" />
       </div>
       <div className="Header-search">
         <input className="Header-searchInput" type="text" placeholder="Search for anything.."/>
