@@ -11,6 +11,9 @@
   width: 100px;
   height: 50px;
   margin-left: 20px;
+  :hover{
+    cursor: pointer;
+  }
 }
 
 .Header-search {
@@ -72,8 +75,15 @@
   display: flex;
   align-items: center;
   padding: 9px;
+  color: #ffffff;
   :hover{
     cursor: pointer;
   }
 }
 
+.Header-cartCount{
+  margin-left: 4px;
+  margin-right: 10px;
+  text-decoration: underline;
+  text-decoration-color: rgb(135, 135, 135);
+}
