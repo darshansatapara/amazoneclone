@@ -31,8 +31,12 @@
 .Header-searchInput {
   width: 100%;
   height: 100%;
+  align-self: center;
+  padding-top: 22px;
   position: relative;
   outline: none;
+ font-size: large;
+
 }
 
 .Header-searchIconContainer {
@@ -65,10 +69,13 @@
   }
 }
 .Header-optionLineOne{
+  color: #ffffff;
   font-size: 12px;
-
+ 
 }
 .Header-optionLineTwo{
+  color: #ffffff;
+  
   font-weight: 600;
 }
 .Header-optionCart{
@@ -86,4 +93,8 @@
   margin-right: 10px;
   text-decoration: underline;
   text-decoration-color: rgb(135, 135, 135);
+}
+
+.link-without-underline {
+  text-decoration: none;
 }

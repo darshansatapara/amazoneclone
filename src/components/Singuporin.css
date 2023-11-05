@@ -1,0 +1,62 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+.container {
+    width: 300px;
+    margin: 0 auto;
+    text-align: center;
+    padding: 20px;
+
+}
+.Sing-image{
+    background: transparent;
+    width: 50%;
+    height: 60px;
+    background-color: black;
+    padding: 0 10px;
+    border-radius: 10px;
+}
+
+form {
+    background: #fff;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+}
+
+form h2 {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    width: 45%;
+    margin-top: 10px;
+    padding: 10px;
+    background: #ff9900;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+#signup-link, #login-link {
+    margin-top: 20px;
+}
+
+#signup-link p, #login-link p {
+    margin-bottom: 10px;
+}
