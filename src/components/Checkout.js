@@ -4,11 +4,13 @@ import Checkoutad from "../images/Checkout-ad.jpg";
 import Subtotal from "./Subtotal";
 import Checkoutproduct from "./Checkoutproduct";
 import { useStateValue } from "../StateProvider";
+import Header from "./Header";
 function Checkout() {
   const [{ basket }, dispatch] = useStateValue();
 
   return (
     <>
+      <Header/>
       <div className="Checkout">
         <div className="Checkoutleft">
           <img className="Checkout-ad" src={Checkoutad} alt="ad" />

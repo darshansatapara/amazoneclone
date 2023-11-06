@@ -1,62 +1,90 @@
-body {
-    font-family: Arial, sans-serif;
-}
-
 .container {
-    width: 300px;
-    margin: 0 auto;
-    text-align: center;
-    padding: 20px;
-
+  width: 300px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 20px;
 }
-.Sing-image{
-    background: transparent;
-    width: 50%;
-    height: 60px;
-    background-color: black;
-    padding: 0 10px;
-    border-radius: 10px;
-}
-
-form {
-    background: #fff;
-    padding: 20px;
-    border: 1px solid #ddd;
-    border-radius: 5px;
+.Sing-image {
+  background: transparent;
+  width: 50%;
+  height: 60px;
+  background-color: black;
+  padding: 0 10px;
+  border-radius: 10px;
 }
 
-form h2 {
-    margin-bottom: 20px;
+.signup-form {
+  background: #fff;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
 }
 
-label {
-    display: block;
-    margin-bottom: 5px;
+.signup-form > h2 {
+  margin-bottom: 20px;
 }
 
-input {
-    width: 90%;
-    padding: 10px;
-    margin-bottom: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+.head-lable {
+  display: block;
+  margin-bottom: 5px;
 }
 
-button {
-    width: 45%;
-    margin-top: 10px;
-    padding: 10px;
-    background: #ff9900;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+.user-input {
+  width: 90%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
 }
 
-#signup-link, #login-link {
-    margin-top: 20px;
+.createacc-button {
+  width: 45%;
+  margin-top: 10px;
+  padding: 10px;
+  background: #ff9900;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
-#signup-link p, #login-link p {
-    margin-bottom: 10px;
+#signup-link,
+#login-link {
+  margin-top: 20px;
+}
+
+#signup-link p,
+#login-link p {
+  margin-bottom: 10px;
+}
+
+.peraAndbutton {
+  margin-left: 35%;
+}
+#login-link {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  width: 50%;
+}
+.only-button {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  width: 50%;
+}
+.pAcc {
+  margin-left: 8%;
+}
+
+.pHome {
+  margin-right: 14%;
+}
+.loginTohome {
+  width: 100px;
+  height: 35px;
+}
+.registerTosignin {
+  width: 100px;
+  height: 35px;
 }

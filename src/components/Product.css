@@ -11,8 +11,8 @@
   background-color: white;
   z-index: 1;
   border-radius: 6px;
-  :hover{
- cursor: pointer;
+  :hover {
+    cursor: pointer;
   }
 }
 .Product-info {
@@ -23,8 +23,8 @@
   margin-bottom: 15px;
   height: 100%;
 }
-.Product-price{
-    margin: 2px;
+.Product-price {
+  margin: 2px;
 }
 .Product-rating {
   display: flex;
@@ -46,5 +46,7 @@
   font-weight: 600;
   border-radius: 5px;
   border: 2px solid #a88734;
-  padding-bottom: 20px;
+  padding-top: 5px;
+  justify-content: center;
+  padding-bottom: 15px;
 }

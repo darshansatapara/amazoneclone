@@ -3,9 +3,11 @@ import "./Home.css";
 import Product from "./Product";
 import productimg1 from "../images/canon.jpg";
 import productimg2 from "../images/song-image.jpeg";
+import Header from "./Header";
 function Home() {
   return (
     <div className="Home">
+      <Header/>
       <div className="Home-container">
         <div className="Home-banner"></div>
         <div className="Home-content">
