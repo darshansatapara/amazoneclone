@@ -8,7 +8,9 @@ import { useStateValue } from "../StateProvider";
 
 function Header() {
   const [{ basket, user }, dispatch] = useStateValue();
-
+const handleAuthentication=()=>{
+  
+}
   return (
     <div className="Header">
       <Link to="/">
@@ -27,19 +29,16 @@ function Header() {
         </div>
       </div>
       <div className="Header-navItems">
-        <Link
-          to={ "/sing-upORlog-in"}
-          className="link-without-underline"
-        >
+        <Link to={"/sing-upORlog-in"} className="link-without-underline">
           <div className="Header-option">
-            <span className="Header-optionLineOne">Hello,Darsh</span>
+            <span className="Header-optionLineOne">Hello,{user ? user.email || "guest" : "guest"}</span>
             <span className="Header-optionLineTwo">
-              {!user ? "Sign OUT" : "Sign In"}
+              {user ? "Sign OUT" : "Sign In"}
             </span>
           </div>
         </Link>
       </div>
-      <div className="Header-option">
+      <div className="Header-option" onClick={handleAuthentication}>
         <span className="Header-optionLineOne">Return</span>
         <span className="Header-optionLineTwo">& Orders</span>
       </div>

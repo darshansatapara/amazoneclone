@@ -1,0 +1,30 @@
+.Payment{
+    background-color: white;
+}
+.Payment-Address,.Payment-Details{
+    flex: 0.8;
+}
+.Payment-items{
+    display: flex;
+    flex-wrap: wrap;
+}
+.Payment-Section{
+    display: flex;
+    padding: 20px;
+    margin: 0 20px;
+    border-bottom: 1px solid lightgray;
+}
+.Payment-Tital{
+    flex: 0.2;
+}
+.Payment-Review-Section{
+    margin: 10px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid lightgray;
+}
+.review-heading{
+    width: 20%;
+    height: 100%;
+    margin: 10px;
+}
+

@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import "./Singuporin.css";
 import amazonimg from "../images/header-logo.png";
 import { useNavigate } from "react-router-dom";
-import { createUserWithEmailAndPassword, signInWithEmailAndPassword } from "firebase/auth"; 
+import {  signInWithEmailAndPassword } from "firebase/auth"; 
 import { auth } from "../firebase";
 
 function Signin() {

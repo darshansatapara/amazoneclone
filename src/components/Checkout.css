@@ -6,7 +6,7 @@
 }
 .Checkout-ad {
   width: 100%;
-  margin-bottom: 10px;
+  margin-bottom: -15px;
   height: 138px;
   padding-right: 10px;
   border: 2px solid lightgrey;
@@ -25,10 +25,12 @@
   padding-top: 0;
   padding: 10px;
 }
-.Checkout-right h2 {
+.shopping-basket-heading {
   border-bottom: 2px solid lightgray;
 }
-
+.Checkout-info{
+  text-align: justify;
+}
 .Checkout-items{
   display: flex;
   flex-wrap: wrap;

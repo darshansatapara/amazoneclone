@@ -12,7 +12,7 @@ function SignupOrIn() {
   const [password, setPassword] = useState("");
 
   const register = () => {
-    createUserWithEmailAndPassword(auth, email, password)
+    createUserWithEmailAndPassword(auth, name,email, password)
       .then((userCredential) => {
         const user = userCredential.user;
         console.log("User registered successfully:", user);
