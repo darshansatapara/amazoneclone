@@ -22,10 +22,13 @@ function Payment() {
 
   useEffect(() => {
     const getClientSecret = async () => {
+      console.log("getClientSecret");
       try {
-        const requestURL = `/Payment/create?total=${getBasketTotal(basket) * 100}`;
+        const requestURL = `/Payment/create?total=${
+          getBasketTotal(basket) * 100
+        }`;
         const response = await axios.post(requestURL);
-  
+        console.log("Response of client secrect key " + response);
         // Ensure that the response contains the expected format
         if (response.data.clientSecret) {
           setClientSecret(response.data.clientSecret);
@@ -39,7 +42,7 @@ function Payment() {
         seterror("An error occurred while fetching the clientSecret.");
       }
     };
-  
+
     getClientSecret();
   }, [basket]);
 
@@ -48,13 +51,16 @@ function Payment() {
     setprocessing(true);
 
     const payload = await stripe
-      .confirmCardPayment(clientSecret, {
-        payment_method: {
-          card: elements.getElement(CardElement),
-        },
-      })
+      .confirmCardPayment(
+        "pi_3OBficSBqzsRg5V31tIeRbRl_secret_sK4izuJjXPUONxVVslwx8Jfz2",
+        {
+          payment_method: {
+            card: elements.getElement(CardElement),
+          },
+        }
+      )
       .then(({ paymentIntent }) => {
-        // paymentIntent=payment conformation
+        // paymentIntent=payment.conformation
         setSucceeded(true);
         seterror(null);
         setprocessing(false);

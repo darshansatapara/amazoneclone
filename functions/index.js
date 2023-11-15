@@ -1,14 +1,14 @@
 const functions = require("firebase-functions");
 const express = require("express");
 const cors = require("cors");
-const stripe = require("@stripe/stripe-js")(
+const stripe = require("stripe")(
   "sk_test_51OA6XESBqzsRg5V3LVLbRtWbjuQxPShRmm48hJh1Qv05TbiFmiVfzkFjrre04kCizI2t7GN0rTfkjIf4tSSQ9nMC00kYHWdpAF"
 );
 
 // -app config
 const app = express();
 app.use(express());
-app.use(cors({ origin: true }));  // Add this line to enable CORS
+app.use(cors({ origin: true })); // Add this line to enable CORS
 
 // ...
 
@@ -30,4 +30,8 @@ app.post("/Payment/create", async (req, res) => {
 // ...
 
 // listen command
-exports.api = functions.https.onRequest(app);
+// exports.api = functions.https.onRequest(app);
+const PORT = 5001;
+app.listen(PORT, () => {
+  console.log("Port is listining on " + PORT);
+});

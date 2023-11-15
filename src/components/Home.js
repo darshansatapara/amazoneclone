@@ -23,7 +23,7 @@ function Home() {
             <Product
               id="991345"
               tital={"mac Air "}
-              price={26.3}
+              price={26}
               image={productimg2}
               rating={4}
             />
@@ -32,7 +32,7 @@ function Home() {
             <Product
               id="99134"
               tital={"macbook"}
-              price={26.3}
+              price={26}
               image={productimg1}
               rating={4}
             />
